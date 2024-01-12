@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #A56CA6;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#FFA8AD;
+    font-size: x-large;
+}

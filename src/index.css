@@ -1,0 +1,46 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dda0dd;
+  font-family: sans-serif;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  gap: 1rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+button {
+  background-color: #FFBC8B;
+  border: solid 2px #4E94E0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.reset {
+  background-color: grey;
+}
+
+img {
+  background-color: transparent;
+}
