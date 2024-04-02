@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import cookieImage from "./images/cookie.png"
+import cookieImage from "./images/cookie.jpg"
 
 
 export default function App() {
@@ -57,7 +57,19 @@ export default function App() {
 
 
   return <div className="main">
-    <img src={cookieImage} alt="Cookie icon" style={{ width: "100px", height: "100px", cursor: "pointer"}} onClick={addCookie} />
+   <div style={{ width: "200px", height: "200px", overflow: "hidden", borderRadius: "50%" }}>
+   <img
+     src={cookieImage}
+     alt="Cookie icon"
+     style={{
+       width: "110%", // Image takes full width of container
+       height: "110%", // Image takes full height of container
+       objectFit: "cover", // Centers the image and crops any overflow
+       cursor: "pointer",
+     }}onClick={addCookie}
+   />
+ </div>
+
     {nomVisible && <p>*nom*</p>}
     <p>No. of cookies: {cookies}</p>
     <p>Cookies per second: {cps}</p>
